@@ -7,11 +7,11 @@ http://zacharyshade.info
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.3.0p0
 
 * System dependencies
 
-* Configuration
+* Configuration x86_64-linux
 
 * Database creation
 
