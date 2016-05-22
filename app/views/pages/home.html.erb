@@ -1,7 +1,92 @@
-<div class="jumbotron text-center">
-<h1>Table Top Clubs</h1>
-<h3> A site to connect local gaming groups to prospective players.</h3>
-</div>
-<div class="">
-<p>Test Text</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Top Clubs</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<!-- jumbotron -->
+		<div style="background:transparent !important" class="jumbotron jumbotron-fluid bg-primary text-center">
+			<div class="container-fluid bg-primary p-y-4">
+				<h1 class="display-2">Table Top Clubs</h1>
+				<p class="lead">Connecting solo gamers to local gaming groups</p>
+				
+			</div>
+		</div>		
+<!--/jumbotron-->
+
+      <div class="container p-t-2"><!-- container -->
+
+        <div class="row"><!--  about -->
+          <div class="col-lg-4">
+            <h3 class"m-b-2">About Table Top Clubs</h3>
+            <!-- <img class="m-b-1 img-fluid" src="d20.png" alt="D20"> -->
+            <p>Our website is a social network deicated to connecting table top gaming enthusiasts to game
+              groups in their local area. It started out as a pet project but quickly evolved into something
+              for creating and managing table top gaming campaigns and clubs. Create a club for anything from
+              Warmachine and Warhammer 40k to Pathfinder or Dragon Age.</p>
+              <p>Let us know if there is anything we can do to make this site better!</p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class"m-b-2">A Big Sandbox</h3>
+            <p>The greatest thing about this system is the ability to use it for any type of game you can think of.</p>
+            <p>You can organize and prepare for playing any kind of Table Top game you can imagine.</p>
+            <p>You can even create your own game and have it reviewed by a community of like minded people.</p>
+            <p>Email this <a href="mailto:tabletopclubs@gmail.com?Subject=Suggestions" target="_top">Address</a> with any recommendations you may have.</p>
+          </div>
+          <div class="col-lg-4">
+            <h3 class"m-b-2">What We Offer</h3>
+            <ul>
+              <li><strong>People</strong>: Create your own personalized profile.</li>
+              <li><strong>Clubs</strong>: Build a club profile to locate potential gamers.</li>
+              <li><strong>Campaigns</strong>: Manage your campaigns by uploading stories, maps and images.</li>
+              <li><strong>Wiki</strong>: Build a wiki for your campaigns and battle reports.</li>
+              <li><strong>Socialize</strong>: Use the built-in messaging app to communicate with friends</li>
+            </ul>
+          </div>
+        </div><!-- /about -->
+
+        <!-- Example Games -->
+        <h1 id="clubssection" class="text-xs-center m-y-3 text-muted">Current Games with Clubs</h1>
+            [clubs go here]
+        <!-- Upcoming features -->
+        <h1 class="text-xs-center m-y-3 text-muted">Features on the Horizon</h1>
+            [upcoming features go here]
+
+        <!--register button-->
+            <button type="button" class="btn btn-primary btn-lg center-block">Register Now</button>
+        <!--/register button-->
+
+        <!-- signup form -->
+            <hr>
+            <div class="row p-y-2 text-muted">
+              <div class="col-md-6 col-xl-5">
+                <p><strong>About Table Top Clubs</strong></p>
+                <p>Table Top Clubs brings gamers together in a new way by connecting local
+                  clubs to new members with a combination of our social network and messaging app.</p>
+              </div>
+              <div class="col-md-6 col-xl-5 col-xl-offset-2">
+                <p><strong>Stay up-to-date with our Newsletter</strong></p>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Email">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Sign up</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <hr><!-- /signup form -->
+
+
+
+      </div> <!-- /container -->
+
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" 
+    integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
